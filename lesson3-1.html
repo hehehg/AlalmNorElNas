@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس 1 - الفصل الثالث - جامعة مدرسة الصحابة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #2d3a3a; /* Updated background color */
+            margin: 0;
+            padding: 0;
+            color: white; /* Set all text to white */
+            line-height: 1.6;
+            direction: rtl; /* Right-to-left text direction for Arabic */
+            text-align: right; /* Align text to the right */
+            font-weight: normal; /* Ensure normal font weight throughout */
+        }
+
+        header {
+            background: #2d3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            background: #2d3a3a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>درس 1 - الفصل الثالث - جامعة مدرسة الصحابة</h1>
+    </header>
+
+    <div>
+        <h2>محتوى الدرس 1</h2>
+        <p>هذا هو محتوى الدرس الأول في الفصل الثالث.</p>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> الموقع الحديث. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // Dynamically set the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

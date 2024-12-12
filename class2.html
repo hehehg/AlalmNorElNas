@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفصل الثاني - جامعة مدرسة الصحابة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: white; /* Set all text to white */
+            line-height: 1.6;
+            direction: rtl; /* Right-to-left text direction for Arabic */
+            text-align: right; /* Align text to the right */
+            font-weight: normal; /* Ensure normal font weight throughout */
+        }
+
+        header {
+            background: #2d3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .button-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .button-grid button {
+            background-color: #4c7d7d;
+            color: white;
+            padding: 15px 25px;
+            font-family: 'Amiri', serif; /* Match header font */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-grid button:hover {
+            background-color: #2d3a3a;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #2d3a3a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>الفصل الثاني - جامعة مدرسة الصحابة</h1>
+    </header>
+
+    <div>
+        <h2>المواد</h2>
+        <div class="button-grid">
+            <button onclick="location.href='lesson2-1.html'">العقيدة</button>
+            <button onclick="location.href='lesson2-2.html'">التفسير</button>
+            <button onclick="location.href='lesson2-3.html'">الحديث</button>
+            <button onclick="location.href='lesson2-4.html'">الفقه</button>
+            <button onclick="location.href='lesson2-5.html'">السيرة</button>
+            <button onclick="location.href='lesson2-6.html'">الآداب والأخلاق</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> الموقع الحديث. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // Dynamically set the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
